@@ -1,0 +1,7 @@
+*.[oa]	# ignore ".o" or ".a" files [e.g file.o file.a]
+
+*~	# ignore "~" files [e.g file~]
+
+!lib.a	# do track lib.a, even though you're ignoring .a files above
+
+build/	# ignore all files in the build/ directory

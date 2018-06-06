@@ -1,7 +1,3 @@
-
-#file(GLOB LIBSTD_SRC_LIST "*.cpp" "*.cc")
-#file(GLOB LIBSTD_INC_LIST "*.hpp" "*.h")
-#
-#message(STATUS ${LIBSTD_INC_LIST})
-add_library(libstd SHARED EXCLUDE_FROM_ALL Singleton.hpp Types.hpp Vector.hpp Macros.hpp)
-#target_include_directories()
+aux_source_directory(. LIBSTD_FILE_LIST)
+add_library(allenos_libstd SHARED ${LIBSTD_FILE_LIST})
+SET_TARGET_PROPERTIES(allenos_libstd PROPERTIES LINKER_LANGUAGE CXX)

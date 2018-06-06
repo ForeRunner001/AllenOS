@@ -1,0 +1,17 @@
+# ignore ".o" or ".a" files [e.g file.o file.a]
+*.[oa]
+
+# ignore "~" files [e.g file~]
+*~
+
+# do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# ignore all files in the build/ directory
+*build*/
+
+# ignore "swp"
+*.swp
+
+\.idea/
+

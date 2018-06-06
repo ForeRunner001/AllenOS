@@ -12,10 +12,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// Created by allen on 18-5-13.
-
-#ifndef ALLENOS_SINGLETON_HPP
-#define ALLENOS_SINGLETON_HPP
+/*******************
+ * @author allen wu
+ * @date   2018-05-13
+ * @file   lib/libstd/Singleton.hpp
+ * @brief  singleton design pattern
+ */
+#ifndef ALLENOS_LIBSTD_SINGLETON_HPP
+#define ALLENOS_LIBSTD_SINGLETON_HPP
 /**
  * Singleton design pattern; only one instance is allowed
  */
@@ -36,6 +40,6 @@
 
  /* Initialize the static member obj. */
 template <typename T>
-T* Singleton<T>::instance = 0;
+T* Singleton<T>::instance = nullptr;
 
-#endif //ALLENOS_SINGLETON_HPP
+#endif //ALLENOS_LIBSTD_SINGLETON_HPP

@@ -12,9 +12,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// Created by allen on 18-5-13.
+/*******************
+ * @author allen wu
+ * @date   2018-05-13
+ * @file   lib/libstd/Vector.hpp
+ * @brief
+ */
+#ifndef ALLENOS_LIBSTD_VECTOR_HPP
+#define ALLENOS_LIBSTD_VECTOR_HPP
 
-#ifndef ALLENOS_VECTOR_HPP
-#define ALLENOS_VECTOR_HPP
+#include "Types.hpp"
+#include "Macros.hpp"
 
-#endif //ALLENOS_VECTOR_HPP
+#endif //ALLENOS_LIBSTD_VECTOR_HPP

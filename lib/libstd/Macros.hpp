@@ -12,10 +12,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// Created by allen on 18-5-13.
-
-#ifndef ALLENOS_MACROS_HPP
-#define ALLENOS_MACROS_HPP
+/*******************
+ * @author allen wu
+ * @date   2018-05-13
+ * @file   lib/libstd/Macros.hpp
+ * @brief  define base macros
+ */
+#ifndef ALLENOS_LIBSTD_MACROS_HPP
+#define ALLENOS_LIBSTD_MACROS_HPP
 
 #include "Types.hpp"
 
@@ -135,4 +139,4 @@ inline bool doubleEquals(double a, double b, double epsilon)
 #define ALIGN(n) \
     __attribute__((aligned(n)))
 
-#endif //ALLENOS_MACROS_HPP
+#endif //ALLENOS_LIBSTD_MACROS_HPP

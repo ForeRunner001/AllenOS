@@ -12,10 +12,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// Created by allen on 18-5-13.
+/*******************
+ * @author allen wu
+ * @date   2018-05-13
+ * @file   lib/libstd/Types.hpp
+ * @brief  declare base data type
+ */
 
-#ifndef ALLENOS_TYPES_HPP
-#define ALLENOS_TYPES_HPP
+#ifndef ALLENOS_LIBSTD_TYPES_HPP
+#define ALLENOS_LIBSTD_TYPES_HPP
 
 #ifndef __ASSEMBLER__
 
@@ -173,4 +178,4 @@ namespace Number
  *@}
  */
 
-#endif //ALLENOS_TYPES_HPP
+#endif //ALLENOS_LIBSTD_TYPES_HPP

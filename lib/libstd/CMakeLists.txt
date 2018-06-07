@@ -1,3 +1,5 @@
-aux_source_directory(. LIBSTD_FILE_LIST)
-add_library(allenos_libstd SHARED ${LIBSTD_FILE_LIST})
+file(GLOB LIBSTD_INC_FILE_LIST "*.hpp" )
+message(${LIBSTD_INC_FILE_LIST})
+aux_source_directory(. LIBSTD_SRC_FILE_LIST)
+add_library(allenos_libstd SHARED ${LIBSTD_SRC_FILE_LIST} ${LIBSTD_INC_FILE_LIST})
 SET_TARGET_PROPERTIES(allenos_libstd PROPERTIES LINKER_LANGUAGE CXX)

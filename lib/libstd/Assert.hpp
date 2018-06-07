@@ -15,7 +15,7 @@
 
 /*******************
  * @author allen wu
- * @date   18-6-6
+ * @date   2018-06-06
  * @file   lib/libstd/Assert.hpp
  * @brief  
  */
@@ -118,7 +118,7 @@ extern C int __assertWrite(Address addr);
  */
 
 /**
- * @brief Dummt assertion function which does not perform any check.
+ * @brief Dummy assertion function which does not perform any check.
  * @param exp Expression is ignored.
  */
 #define assert(exp)

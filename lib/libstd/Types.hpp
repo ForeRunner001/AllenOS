@@ -1,4 +1,5 @@
 /* Copyright (c) 2018 Allen Wu. All rights reserved.
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -12,12 +13,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 /*******************
  * @author allen wu
  * @date   2018-05-13
  * @file   lib/libstd/Types.hpp
  * @brief  declare base data type
- */
+ *******************/
 
 #ifndef ALLENOS_LIBSTD_TYPES_HPP
 #define ALLENOS_LIBSTD_TYPES_HPP
@@ -145,8 +147,7 @@ typedef uint16 ProcessID;
 /**
  * Describes a device ID number.
  */
-typedef struct DeviceID
-{
+typedef struct DeviceID {
     /** Major device ID number is a PID. */
     ProcessID major;
 
@@ -158,24 +159,23 @@ typedef struct DeviceID
  * Error code defined in Error.h
  * @see Error.h
  */
- typedef slong Error;
+typedef slong Error;
 
 #ifdef __cplusplus
-namespace Number
-{
+namespace Number {
     /**
      * Numeral system base type
      */
-     typedef enum Base
-     {
-        Dec,    // Decimal: 0-10
-        Hex,    // Hexadecimal: 0x0-0xf
+     typedef enum Base {
+        Dec,  // Decimal: 0-10
+        Hex,  // Hexadecimal: 0x0-0xf
      } Base;
 };
-#endif // __cplusplus
+#endif  // __cplusplus
 
 /**
  *@}
  */
 
-#endif //ALLENOS_LIBSTD_TYPES_HPP
+#endif  // __ASSEMBLER__
+#endif  // ALLENOS_LIBSTD_TYPES_HPP

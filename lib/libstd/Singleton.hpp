@@ -1,4 +1,5 @@
 /* Copyright (c) 2018 Allen Wu. All rights reserved.
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -12,34 +13,36 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 /*******************
  * @author allen wu
  * @date   2018-05-13
  * @file   lib/libstd/Singleton.hpp
  * @brief  singleton design pattern
- */
+ *******************/
+
 #ifndef ALLENOS_LIBSTD_SINGLETON_HPP
 #define ALLENOS_LIBSTD_SINGLETON_HPP
 /**
  * Singleton design pattern; only one instance is allowed
  */
- template <typename T>
- class Singleton {
+template <typename T>
+class Singleton {
  public:
-     /**
-      * Constructor
-      * @param instance New instance of T.
-      */
-      Singleton<T>(T *obj){
+    /**
+     * Constructor
+     * @param instance New instance of T.
+     */
+    Singleton<T>(T *obj){
         instance = obj;
-      }
+    }
 
-      /* One and only instance */
-     static T *instance;
- };
+    /* One and only instance */
+    static T *instance;
+};
 
  /* Initialize the static member obj. */
 template <typename T>
 T* Singleton<T>::instance = nullptr;
 
-#endif //ALLENOS_LIBSTD_SINGLETON_HPP
+#endif  // ALLENOS_LIBSTD_SINGLETON_HPP

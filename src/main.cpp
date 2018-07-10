@@ -2,8 +2,7 @@
 #include "libstd/MemoryBlock.hpp"
 #include "libstd/Assert.hpp"
 using namespace std;
-int main()
-{
+int main() {
     uint32 len = 10;
     char str[len] = {'0','1','2','3','4'};
 

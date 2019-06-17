@@ -8,4 +8,7 @@
 !lib.a
 
 # ignore all files in the build/ directory
-build/
+build*
+cmake-build-*
+
+.idea
